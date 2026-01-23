@@ -510,7 +510,7 @@ h1, h2, h3 {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -50px; /* 位置調整 */
+    left: -52px; /* 位置調整 */
     top: 5px;
     width: 20px; /* 点を大きく */
     height: 20px;
