@@ -365,18 +365,34 @@ h1, h2, h3 {
 /* Grid System (Strength) */
 .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3列固定 */
+    grid-auto-rows: 1fr; /* すべての行を同じ高さに */
     gap: 30px;
+    align-items: stretch; /* すべてのカードを同じ高さに */
+}
+
+@media (max-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr); /* タブレットは2列 */
+        grid-auto-rows: 1fr; /* すべての行を同じ高さに */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: 1fr; /* モバイルは1列 */
+        grid-auto-rows: auto; /* モバイルでは自動高さ */
+    }
 }
 
 .card {
     background-color: #222;
     padding: 30px;
     border-left: 5px solid var(--primary-color);
-    height: 100%; /* 高さを親グリッドに合わせる */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* 上揃え */
+    height: 100%; /* 親グリッドの高さに合わせる */
 }
 
 .card h3 {
