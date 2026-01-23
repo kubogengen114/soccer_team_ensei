@@ -200,6 +200,7 @@ h1, h2, h3 {
     object-fit: cover;
     object-position: center;
     z-index: 0;
+    transition: opacity 1s;
 }
 
 .hero-image:not([src]),

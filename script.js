@@ -9,6 +9,23 @@ window.addEventListener('load', () => {
     }, 2500);
 });
 
+// スライドショー
+window.addEventListener('load', () => {
+  const image1 = document.getElementById('hero-image1');
+  const image2 = document.getElementById('hero-image2');
+  const image3 = document.getElementById('hero-image3');
+  const images = [image1, image2, image3];
+  let index = 0;
+  images[index].style.opacity = 1;
+
+  setInterval(() => {
+    images[index].style.opacity = 0;
+    // 表示画像を示すインデックスを変更
+    index = (index+1) % images.length;
+    images[index].style.opacity = 1;
+  }, 5000);
+})
+
 // ハンバーガーメニューの制御
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
