@@ -678,6 +678,18 @@ h1, h2, h3 {
 .opening-content {
     text-align: center;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opening-logo {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.5s;
 }
 
 .opening-sub {
@@ -817,6 +829,11 @@ h1, h2, h3 {
     }
 
     /* Opening Responsive */
+    .opening-logo {
+        max-width: 400px;
+        width: 85%;
+    }
+    
     .opening-title {
         font-size: 2rem;
     }
