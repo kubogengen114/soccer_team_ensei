@@ -767,8 +767,7 @@ h1, h2, h3 {
 }
 
 .opening-logo {
-    max-width: 600px;
-    width: 90%;
+    max-width: 300px;
     height: auto;
     opacity: 0;
     transform: translateY(20px);
@@ -950,7 +949,7 @@ h1, h2, h3 {
 
     /* Opening Responsive */
     .opening-logo {
-        max-width: 400px;
+        max-width: 200px;
         width: 85%;
     }
     
