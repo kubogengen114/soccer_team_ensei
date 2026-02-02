@@ -982,7 +982,7 @@ h1, h2, h3 {
     }
     
     .contact-content {
-        padding: 40px 25px;
+        padding: 40px 20px;
     }
     
     .contact-icon {
@@ -990,7 +990,7 @@ h1, h2, h3 {
     }
     
     .contact-title {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     
     .contact-description {
@@ -999,6 +999,6 @@ h1, h2, h3 {
     
     .contact-button {
         padding: 15px 35px;
-        font-size: 1.1rem;
+        font-size: 1.0rem;
     }
 }
