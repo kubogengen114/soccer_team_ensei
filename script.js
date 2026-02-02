@@ -16,13 +16,23 @@ window.addEventListener('load', () => {
   const image3 = document.getElementById('hero-image3');
   const images = [image1, image2, image3];
   let index = 0;
-  images[index].style.opacity = 1;
+  
+  // 初期表示
+  images.forEach((img, i) => {
+    if (img) {
+      img.style.opacity = i === 0 ? 0.4 : 0;
+    }
+  });
 
   setInterval(() => {
-    images[index].style.opacity = 0;
+    if (images[index]) {
+      images[index].style.opacity = 0;
+    }
     // 表示画像を示すインデックスを変更
     index = (index+1) % images.length;
-    images[index].style.opacity = 1;
+    if (images[index]) {
+      images[index].style.opacity = 0.4;
+    }
   }, 5000);
 })
 

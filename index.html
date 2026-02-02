@@ -8,6 +8,8 @@
     <link rel="icon" href="favicon32.ico">
     <link rel="icon" href="favicon64.ico">
     <link rel="icon" href="favicon128.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,9 +49,10 @@
 
     <!-- ヒーローエリア -->
     <section class="hero">
-        <img src="./images/slideshow-1.png" alt="Hero Image" class="hero-image" id="hero-image1">
-        <img src="./images/slideshow-2.png" alt="Hero Image" class="hero-image" id="hero-image2">
-        <img src="./images/slideshow-3.png" alt="Hero Image" class="hero-image" id="hero-image3">
+        <img src="player1.jpg" alt="Hero Image" class="hero-image" id="hero-image1">
+        <img src="player2.jpg" alt="Hero Image" class="hero-image" id="hero-image2">
+        <img src="player3.jpg" alt="Hero Image" class="hero-image" id="hero-image3">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <p class="hero-sub">世界への挑戦権を掴め</p>
             <h2 class="hero-title">POLAND<br>NUMBER ONE CUP</h2>
@@ -329,25 +332,22 @@
         <div class="container">
             <h2 class="section-title">CONTACT<span class="jp">お問い合わせ・申し込み</span></h2>
             
-            <!-- 送信ステータス表示用 -->
-            <div id="form-status" style="display: none; padding: 1rem; margin-bottom: 1rem; border-radius: 4px;"></div>
-
-            <!-- Formspree送信用フォーム -->
-            <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqarooaj" method="POST">
-                <div class="form-group">
-                    <label for="name">お名前</label>
-                    <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+            <div class="contact-box">
+                <div class="contact-content">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">お問い合わせ・申し込み</h3>
+                    <p class="contact-description">
+                        遠征への参加やご質問がございましたら、<br>
+                        以下のボタンからお気軽にお問い合わせください。
+                    </p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeg_JnlPgRqO0WZMPDFx9Yhc4TQjTTSgyOy1aQeG-zt4_5A2Q/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" class="contact-button">
+                        <span>お問い合わせフォームへ</span>
+                        <span class="button-arrow">→</span>
+                    </a>
                 </div>
-                <div class="form-group">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">お問い合わせ内容</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="cta-button">送信する</button>
-            </form>
+            </div>
         </div>
     </section>
 
