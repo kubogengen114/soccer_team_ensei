@@ -20,7 +20,7 @@ window.addEventListener('load', () => {
   // 初期表示
   images.forEach((img, i) => {
     if (img) {
-      img.style.opacity = i === 0 ? 0.4 : 0;
+      img.style.opacity = i === 0 ? 0.6 : 0;
     }
   });
 
@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
     // 表示画像を示すインデックスを変更
     index = (index+1) % images.length;
     if (images[index]) {
-      images[index].style.opacity = 0.4;
+      images[index].style.opacity = 0.6;
     }
   }, 5000);
 })
