@@ -679,9 +679,7 @@ h1, h2, h3 {
 }
 
 .contact-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
+    display: inline-block;
     background-color: var(--primary-color);
     color: #000;
     padding: 18px 50px;
@@ -697,15 +695,6 @@ h1, h2, h3 {
     background-color: #fff;
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(255, 215, 0, 0.6);
-}
-
-.contact-button .button-arrow {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.contact-button:hover .button-arrow {
-    transform: translateX(5px);
 }
 
 /* Form */
@@ -1011,7 +1000,5 @@ h1, h2, h3 {
     .contact-button {
         padding: 15px 35px;
         font-size: 1.1rem;
-        flex-direction: column;
-        gap: 10px;
     }
 }
