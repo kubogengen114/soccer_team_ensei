@@ -273,7 +273,7 @@ h1, h2, h3 {
 /* Team Intro */
 #team {
     position: relative;
-    background-image: url('soccer.png');
+    background-image: url('images/soccer.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
