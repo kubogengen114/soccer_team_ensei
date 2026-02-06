@@ -1,7 +1,7 @@
 // オープニングアニメーション
 window.addEventListener('load', () => {
     const opening = document.getElementById('opening');
-    // 3.0秒後にフェードアウト開始
+    // 3.5秒後にフェードアウト開始
     setTimeout(() => {
         if (opening) {
             opening.classList.add('hidden');
