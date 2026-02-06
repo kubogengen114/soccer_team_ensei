@@ -1,12 +1,12 @@
 // オープニングアニメーション
 window.addEventListener('load', () => {
     const opening = document.getElementById('opening');
-    // 2.5秒後にフェードアウト開始
+    // 3.0秒後にフェードアウト開始
     setTimeout(() => {
         if (opening) {
             opening.classList.add('hidden');
         }
-    }, 2500);
+    }, 3500);
 });
 
 // スライドショー
