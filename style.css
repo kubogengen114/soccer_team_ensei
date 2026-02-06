@@ -728,6 +728,29 @@ h1, h2, h3 {
     border-color: var(--primary-color);
 }
 
+
+/* SNS */
+#sns {}
+
+.sns-card {
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: transform ease 0.2s;
+}
+
+.sns-card:hover {
+  transform: translateY(-2px);
+}
+
+.sns-card h3 {
+  margin: 0 auto;
+  height: 2em;
+}
+
+
 /* Footer */
 .footer {
     background-color: #000;
