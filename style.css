@@ -416,7 +416,7 @@ h1, h2, h3 {
 /* Grid System (Strength) */
 .grid-3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3列固定 */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 自動調整で4つまで対応 */
     grid-auto-rows: 1fr; /* すべての行を同じ高さに */
     gap: 30px;
     align-items: stretch; /* すべてのカードを同じ高さに */
