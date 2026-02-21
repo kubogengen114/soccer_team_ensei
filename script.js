@@ -1,12 +1,12 @@
 // オープニングアニメーション
 window.addEventListener('load', () => {
     const opening = document.getElementById('opening');
-    // 2.5秒後にフェードアウト開始
+    // 3.5秒後にフェードアウト開始
     setTimeout(() => {
         if (opening) {
             opening.classList.add('hidden');
         }
-    }, 2500);
+    }, 3500);
 });
 
 // スライドショー
@@ -14,7 +14,9 @@ window.addEventListener('load', () => {
   const image1 = document.getElementById('hero-image1');
   const image2 = document.getElementById('hero-image2');
   const image3 = document.getElementById('hero-image3');
-  const images = [image1, image2, image3];
+  const image4 = document.getElementById('hero-image4');
+  const image5 = document.getElementById('hero-image5');
+  const images = [image1, image2, image3, image4, image5];
   let index = 0;
   
   // 初期表示
