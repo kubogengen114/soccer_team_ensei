@@ -309,6 +309,15 @@ h1, h2, h3 {
     padding: 0 20px;
 }
 
+.team-description p {
+    margin-bottom: 1.5em;
+    line-height: 1.8;
+}
+
+.team-description p:last-child {
+    margin-bottom: 0;
+}
+
 /* About */
 .about-content {
     display: flex;
@@ -945,6 +954,13 @@ h1, h2, h3 {
     .team-description {
         font-size: 1rem;
         line-height: 1.8;
+        padding: 0 15px;
+    }
+
+    .team-description p {
+        margin-bottom: 1.2em;
+        line-height: 1.7;
+        text-align: left; /* スマートフォンでは左揃えで読みやすく */
     }
 
     /* Opening Responsive */
