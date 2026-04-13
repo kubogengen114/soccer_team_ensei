@@ -614,6 +614,14 @@ h1, h2, h3 {
     font-size: 1.2rem; /* フォントサイズUP */
 }
 
+.timeline-note {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #bbb;
+    line-height: 1.6;
+}
+
 /* QA */
 .qa-list {
     max-width: 800px;
