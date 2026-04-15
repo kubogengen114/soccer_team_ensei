@@ -728,6 +728,41 @@ h1, h2, h3 {
     color: #000;
 }
 
+/* Privacy */
+.privacy-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 36px 32px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-left: 5px solid var(--primary-color);
+}
+
+.privacy-box p {
+    color: #ddd;
+    line-height: 1.9;
+}
+
+.privacy-list {
+    margin: 18px 0 20px;
+    padding-left: 1.2em;
+    color: #ddd;
+}
+
+.privacy-list li {
+    margin-bottom: 12px;
+    line-height: 1.9;
+}
+
+.privacy-list strong {
+    color: var(--primary-color);
+}
+
+.privacy-note {
+    margin-top: 12px;
+    color: #bbb;
+}
+
 /* Contact Box */
 .contact-box {
     max-width: 700px;
@@ -1136,6 +1171,14 @@ h1, h2, h3 {
         font-size: 1.3rem;
     }
     
+    .privacy-box {
+        padding: 24px 18px;
+    }
+
+    .privacy-list {
+        padding-left: 1em;
+    }
+
     .contact-description {
         font-size: 1rem;
     }
