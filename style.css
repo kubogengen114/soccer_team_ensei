@@ -597,6 +597,46 @@ h1, h2, h3 {
     margin-right: 0.35em;
 }
 
+.cost-box {
+    margin-top: 32px;
+    padding: 28px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.cost-total {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.cost-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.cost-column h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.cost-column ul {
+    margin: 0;
+    padding-left: 1.2em;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.cost-column li {
+    margin-bottom: 8px;
+}
+
 /* Timeline */
 .timeline {
     max-width: 100%;
@@ -1064,6 +1104,19 @@ h1, h2, h3 {
 
     .schedule-subtitle {
         font-size: 1.5rem;
+    }
+
+    .cost-box {
+        padding: 20px;
+    }
+
+    .cost-total {
+        font-size: 1.2rem;
+    }
+
+    .cost-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
     
     /* Contact Responsive */
